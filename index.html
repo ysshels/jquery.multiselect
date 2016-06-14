@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> jquery.multiselect.js </title>
+<link href="css/skin.css" type="text/css" rel="stylesheet" />
+<link href="css/jquery.multiselect.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="content">
+<form>
+
+    <select name="basic[]" multiple="multiple" class="demo2" style="width: 120px" >
+        <option selected>全部店铺</option>
+        <option value="UT" >三际数码官方旗舰店</option>
+        <option value="VT"><span class="text-red">三际数码官方旗舰店</span></option>
+        <option value="VA">三际数码官方旗舰店</option>
+        <option value="VA">三际数码官方旗舰店</option>
+        <option value="WV">哈三际数码官方旗舰店</option>
+        <option value="WV">三际数码官方旗舰店</option>
+        <option value="WI">三际数码官方旗舰店</option>
+        <option value="WY">三际数码官方旗舰店</option>
+    </select>
+
+
+
+</form>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.multiselect.js"></script>
+<script>
+
+	$('select[multiple].demo2').multiselect({
+		columns: 2,
+		placeholder: 'Select States',
+		search: true,
+		selectGroup: true
+	});
+
+</script>
+</body>
+</html>
